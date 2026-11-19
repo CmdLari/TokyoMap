@@ -24,13 +24,24 @@
 }
 
 .photo-lightbox-info {
+  width: 20%;
+  margin-top: 10%;
+  margin-left: 0%;
+  justify-content: flex-end;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   gap: 12px;
-  font-size: 20px;
+  font-size: 50px;
+  font-weight: 300;
   letter-spacing: 1px;
-  line-height: 1.8;
+  line-height: 1.0;
+  text-shadow: 0 2px 6px rgba(0, 0, 0, 0.5);
+}
+
+.photo-lightbox-break {
+  flex-basis: 100%;
+  height: 0;
 }
 
 .photo-lightbox-divider {
@@ -40,8 +51,9 @@
 .photo-lightbox-close {
   background: none;
   border: none;
-  color: #e6e0d8;
-  font-size: 32px;
+  color: #ffffff;
+  font-weight: 300;
+  font-size: 45px;
   line-height: 1;
   cursor: pointer;
   transition: color 200ms;
@@ -81,11 +93,12 @@
   background: rgba(0, 0, 0, 0.45);
   border: none;
   color: #e6e0d8;
-  font-size: 48px;
+  font-size: 60px;
   width: 55px;
   height: 75px;
   cursor: pointer;
   pointer-events: auto;
+  font-weight: 300;
   transition: background 200ms, color 200ms;
 }
 
@@ -135,8 +148,11 @@
   }
 
   .photo-lightbox-info {
-    font-size: 10px;
+    width: 100%;
+    font-size: 15px;
     gap: 6px;
+    justify-content: center;
+    text-shadow: 0 2px 6px rgba(0, 0, 0, 0.5);
   }
 
   .photo-lightbox-image {
