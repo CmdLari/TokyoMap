@@ -1,0 +1,17 @@
+{
+  "akihabara": "/audio/stations/akihabara.mp3",
+  "asakusabashi": "/audio/stations/Asakusabashi_daimon_ginza_Shimbashi.mp3",
+  "daimon": "/audio/stations/Asakusabashi_daimon_ginza_Shimbashi.mp3",
+  "ginza": "/audio/stations/Asakusabashi_daimon_ginza_Shimbashi.mp3",
+  "shimbashi": "/audio/stations/Asakusabashi_daimon_ginza_Shimbashi.mp3",
+  "asakusa": "/audio/stations/asakusa_shibuya.mp3",
+  "shibuya": "/audio/stations/asakusa_shibuya.mp3",
+  "kamiyacho": "/audio/stations/Kamiyacho_ueno.mp3",
+  "ueno": "/audio/stations/Kamiyacho_ueno.mp3",
+  "shinjuku": "/audio/stations/shinjuku_Shinjuku-sanchome.mp3",
+  "shinjuku-sanchome": "/audio/stations/shinjuku_Shinjuku-sanchome.mp3",
+  "shiodome": "/audio/stations/shiodome_Tameike-sanno_yoyogi.mp3",
+  "tameike-sanno": "/audio/stations/shiodome_Tameike-sanno_yoyogi.mp3",
+  "yoyogi": "/audio/stations/shiodome_Tameike-sanno_yoyogi.mp3",
+  "tsukijishijo": "/audio/stations/tsukijishijo.mp3"
+}
