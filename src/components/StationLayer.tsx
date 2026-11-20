@@ -1,7 +1,7 @@
 
 import { useState } from 'react';
 import { lines } from '../data/lines';
-import { getPhotosForStation } from '../data/photos';
+import { getStationPhotos } from '../utils/getStationPhotos';
 import StationMarker from './StationMarker';
 import type { Station } from '../types/railway';
 
@@ -22,9 +22,7 @@ function StationLayer({
 
   const stations = Object.values(lines).flatMap(line =>
     line.stations
-      .filter(station =>
-        getPhotosForStation(station.name).length > 0
-      )
+      .filter(station => getStationPhotos(station).length > 0)
       .map(station => ({
         station,
         colour: line.colour,
