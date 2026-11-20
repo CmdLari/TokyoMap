@@ -250,6 +250,18 @@ main {
   color: #fff;
   text-decoration: underline;
 }
+
+.site-footer a.footer-author {
+  font-weight: 700;
+  color: #d22918;
+}
+
+.site-footer a.footer-author:hover,
+.site-footer a.footer-author:visited {
+  color: #d22918;
+}
+
+
 /* Main map and gallery layout */
 
 .explorer {

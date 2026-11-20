@@ -310,6 +310,7 @@ useEffect(() => {
           href="https://pychlau.com"
           target="_blank"
           rel="noopener noreferrer"
+          className="footer-author"
         >
           Larissa Pychlau
         </a>
