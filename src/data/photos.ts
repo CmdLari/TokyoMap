@@ -1,4 +1,3 @@
-
 const photoFiles = import.meta.glob(
   '/public/images/photos/*.{jpg,jpeg,png,webp,JPG,JPEG,PNG,WEBP}',
   {

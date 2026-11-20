@@ -36,7 +36,6 @@ function StationMarker({
         style={{ overflow: 'visible' }}
         >
         <div
-            xmlns="http://www.w3.org/1999/xhtml"
             className="station-tooltip"
         >
             {station.name.toUpperCase()} | {station.nameJa}

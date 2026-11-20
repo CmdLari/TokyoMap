@@ -1,7 +1,7 @@
 
 @font-face {
   font-family: 'M PLUS 1p';
-  src: url('/fonts/MPLUS1p-Light.ttf') format('truetype');
+  src: url('./assets/MPLUS1p-Light.ttf') format('truetype');
   font-style: normal;
   font-weight: 300;
   font-display: swap;
@@ -9,7 +9,7 @@
 
 @font-face {
   font-family: 'M PLUS 1p';
-  src: url('/fonts/MPLUS1p-Bold.ttf') format('truetype');
+  src: url('./assets/MPLUS1p-Bold.ttf') format('truetype');
   font-style: normal;
   font-weight: 700;
   font-display: swap;
@@ -33,7 +33,7 @@ body {
 html,
 body,
 #root {
-  cursor: url('/images/cursor.png') 0 0, auto;
+  cursor: url('./assets/cursor.png') 0 0, auto;
 }
 
 button,
@@ -44,7 +44,7 @@ button:hover,
 a:hover,
 .station-marker:hover,
 .station-marker:hover * {
-  cursor: url('/images/cursor_hover.png') 16 16, pointer !important;
+  cursor: url('./assets/cursor_hover.png') 16 16, pointer !important;
 }
 button,
 input,

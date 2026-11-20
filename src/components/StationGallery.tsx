@@ -26,7 +26,7 @@ export default function StationGallery({
             onClick={() => setActivePhoto(index)}
           >
             <img
-              src={photo.src}
+              src={`${import.meta.env.BASE_URL}${photo.src.replace(/^\//, '')}`}
               alt={`${photo.station}, ${photo.year}`}
               loading="lazy"
             />

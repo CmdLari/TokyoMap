@@ -15,6 +15,8 @@ function App() {
   const [isPlaying, setIsPlaying] = useState(false);
   const [selectedStation, setSelectedStation] = useState<Station | null>(null);
   const stationAudioRef = useRef<HTMLAudioElement | null>(null);
+  const stationAudio2Ref = useRef<HTMLAudioElement | null>(null);
+  const lineChangeAudioRef = useRef<HTMLAudioElement | null>(null);
   const ambienceAudioRef = useRef<HTMLAudioElement | null>(null);
   const ambienceTimerRef = useRef<ReturnType<typeof setTimeout> | null>(null);
 
@@ -75,29 +77,53 @@ function App() {
     ? getStationPhotos(selectedStation)
     : [];
 
+    function playLineChangeSound() {
+      lineChangeAudioRef.current?.pause();
 
-function navigateToStation(station: Station) {
-  // Cancel any pending ambience
-  if (ambienceTimerRef.current !== null) {
-    clearTimeout(ambienceTimerRef.current);
-    ambienceTimerRef.current = null;
+      const audio = new Audio(
+        `${import.meta.env.BASE_URL}audio/stationchange.mp3`
+      );
+
+      audio.volume = 0.5;
+      audio.currentTime = 0;
+      lineChangeAudioRef.current = audio;
+
+      void audio.play().catch(console.warn);
+    }
+
+  function navigateToStation(station: Station) {
+    // Cancel any pending ambience
+    if (ambienceTimerRef.current !== null) {
+      clearTimeout(ambienceTimerRef.current);
+      ambienceTimerRef.current = null;
   }
 
   // Stop previous station sounds
   stationAudioRef.current?.pause();
+  stationAudio2Ref.current?.pause();
   ambienceAudioRef.current?.pause();
 
   stationAudioRef.current = null;
+  stationAudio2Ref.current = null;
   ambienceAudioRef.current = null;
 
   setSelectedStation(station);
 
   // Play train sound immediately
-  const stationAudio = new Audio('/audio/subway_station.mp3');
+  const stationAudio = new Audio(
+    `${import.meta.env.BASE_URL}audio/subway_station.mp3`
+  );
   stationAudio.volume = 0.4;
   stationAudioRef.current = stationAudio;
 
+  const stationAudio2 = new Audio(
+    `${import.meta.env.BASE_URL}audio/doors.mp3`
+  );
+  stationAudio2.volume = 0.6;
+  stationAudio2Ref.current = stationAudio2;
+
   void stationAudio.play().catch(console.warn);
+  void stationAudio2.play().catch(console.warn);
 
   // Look for station-specific ambience
   const sounds = stationSounds as Record<string, string>;
@@ -109,7 +135,9 @@ function navigateToStation(station: Station) {
   ambienceTimerRef.current = setTimeout(() => {
     if (stationAudioRef.current !== stationAudio) return;
 
-    const ambience = new Audio(ambiencePath);
+  const ambience = new Audio(
+    `${import.meta.env.BASE_URL}${ambiencePath.replace(/^\//, '')}`
+  );
     ambience.volume = 0.25;
     ambience.loop = true;
 
@@ -128,9 +156,11 @@ function closeStation() {
   }
 
   stationAudioRef.current?.pause();
+  stationAudio2Ref.current?.pause();
   ambienceAudioRef.current?.pause();
 
   stationAudioRef.current = null;
+  stationAudio2Ref.current = null;
   ambienceAudioRef.current = null;
 
   setSelectedStation(null);
@@ -143,7 +173,10 @@ useEffect(() => {
     }
 
     stationAudioRef.current?.pause();
+    stationAudio2Ref.current?.pause();    
     ambienceAudioRef.current?.pause();
+    lineChangeAudioRef.current?.pause();
+
   };
 }, []);
 
@@ -166,7 +199,7 @@ useEffect(() => {
     <main>
       <audio
         ref={audioRef}
-        src="/audio/low_atmos-zen-meditation-music.mp3"
+        src={`${import.meta.env.BASE_URL}audio/low_atmos-zen-meditation-music.mp3`}
         loop
         onLoadedMetadata={(e) => {
           e.currentTarget.volume = 0.2;
@@ -254,7 +287,10 @@ useEffect(() => {
                             key={line.id}
                             className="station-transfer-button"
                             style={{ borderColor: line.colour }}
-                            onClick={() => setSelectedStation(transferStation)}
+                            onClick={() => {
+                              playLineChangeSound();
+                              setSelectedStation(transferStation);
+                            }}
                           >
                             <span
                               className="station-transfer-dot"

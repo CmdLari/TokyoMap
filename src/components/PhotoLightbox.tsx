@@ -96,7 +96,7 @@ export default function PhotoLightbox({
 
         <img
           key={photo.filename}
-          src={photo.src}
+          src={`${import.meta.env.BASE_URL}${photo.src.replace(/^\//, '')}`}
           alt={`${station.name}, ${photo.year}`}
           className="photo-lightbox-image"
         />

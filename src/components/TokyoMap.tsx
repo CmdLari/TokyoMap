@@ -43,7 +43,7 @@ function TokyoMap({
         xmlns="http://www.w3.org/2000/svg"
       >
         <image
-          href="/images/tokyo-base.png"
+          href={`${import.meta.env.BASE_URL}images/tokyo-base.png`}
           x={0}
           y={0}
           width={MAP_WIDTH}
@@ -67,7 +67,7 @@ function TokyoMap({
         />
 
         <image
-          href="/images/overlay.png"
+          href={`${import.meta.env.BASE_URL}images/overlay.png`}
           x={0}
           y={0}
           width={MAP_WIDTH}
