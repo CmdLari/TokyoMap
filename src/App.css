@@ -403,6 +403,69 @@ main {
   color: #d22918;
 }
 
+/* Station line transfers */
+
+.station-transfers {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  margin-top: 14px;
+  width: 100%;
+}
+
+.station-transfers-label {
+  font-size: 10px;
+  font-weight: 300;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: #999;
+  white-space: nowrap;
+}
+
+.station-transfers-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 6px;
+  width: 100%;
+}
+
+.station-transfer-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+
+  padding: 5px 10px;
+
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid;
+  border-radius: 20px;
+
+  color: #fff;
+  font-size: 11px;
+  font-weight: 300;
+  white-space: nowrap;
+
+  transition:
+    background 200ms ease,
+    box-shadow 200ms ease,
+    transform 200ms ease;
+}
+
+.station-transfer-button:hover {
+  background: rgba(255, 255, 255, 0.12);
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.15);
+  transform: translateY(-2px);
+}
+
+.station-transfer-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
 
 /* Mobile layout */
 

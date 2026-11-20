@@ -5,7 +5,7 @@ export const lines: Record<string, TrainLine> = {
 
   asakusa: {
     id: 'asakusa',
-    name: 'Toei Asakusa Line',
+    name: 'Asakusa Line',
     colour: '#ec6e65',
 
     stations: [
@@ -29,6 +29,62 @@ export const lines: Record<string, TrainLine> = {
       { id: 'asakusa', name: 'Asakusa', nameJa: '浅草', number: 'A 18', ward: 'Taito', wardJa: '台東区', x: 1173, y: 493 },
       { id: 'honjo-azumabashi', name: 'Honjo-azumabashi', nameJa: '本所吾妻橋', number: 'A 19', ward: 'Sumida', wardJa: '墨田区', x: 1198, y: 496 },
       { id: 'oshiage', name: 'Oshiage', nameJa: '押上', number: 'A 20', ward: 'Sumida', wardJa: '墨田区', x: 1227, y: 488 },
+    ],
+  },
+
+
+  chiyoda: {
+    id: 'chiyoda',
+    name: 'Tokyo Metro Chiyoda Line',
+    colour: '#00bb85',
+
+    stations: [
+      { id: 'yoyogi-uehara', name: 'Yoyogi-uehara', nameJa: '代々木上原', number: 'C 01', ward: 'Shibuya', wardJa: '渋谷区', x: 794, y: 656 },
+      { id: 'yoyogi-koen', name: 'Yoyogi-koen', nameJa: '代々木公園', number: 'C 02', ward: 'Shibuya', wardJa: '渋谷区', x: 823, y: 656 },
+      { id: 'meiji-jingumae', name: 'Meiji-jingumae', nameJa: '明治神宮前', number: 'C 03', ward: 'Shibuya', wardJa: '渋谷区', x: 873, y: 658 },
+      { id: 'omotesando', name: 'Omotesando', nameJa: '表参道', number: 'C 04', ward: 'Minato', wardJa: '港区', x: 899, y: 671 },
+      { id: 'nogizaka', name: 'Nogizaka', nameJa: '乃木坂', number: 'C 05', ward: 'Minato', wardJa: '港区', x: 944, y: 666 },
+      { id: 'akasaka', name: 'Akasaka', nameJa: '赤坂', number: 'C 06', ward: 'Minato', wardJa: '港区', x: 987, y: 643 },
+      { id: 'kokkai-gijidomae', name: 'Kokkai-gijidomae', nameJa: '国会議事堂前', number: 'C 07', ward: 'Chiyoda', wardJa: '千代田区', x: 998, y: 637 },
+      { id: 'kasumigaseki', name: 'Kasumigaseki', nameJa: '霞ケ関', number: 'C 08', ward: 'Chiyoda', wardJa: '千代田区', x: 1026, y: 643 },
+      { id: 'hibiya', name: 'Hibiya', nameJa: '日比谷', number: 'C 09', ward: 'Chiyoda', wardJa: '千代田区', x: 1051, y: 635 },
+      { id: 'nijubashimae', name: 'Nijubashimae', nameJa: '二重橋前', number: 'C 10', ward: 'Chiyoda', wardJa: '千代田区', x: 1061, y: 611 },
+      { id: 'otemachi', name: 'Otemachi', nameJa: '大手町', number: 'C 11', ward: 'Chiyoda', wardJa: '千代田区', x: 1073, y: 587 },
+      { id: 'shin-ochanomizu', name: 'Shin-ochanomizu', nameJa: '新御茶ノ水', number: 'C 12', ward: 'Chiyoda', wardJa: '千代田区', x: 1072, y: 542 },
+      { id: 'yushima', name: 'Yushima', nameJa: '湯島', number: 'C 13', ward: 'Bunkyo', wardJa: '文京区', x: 1085, y: 500 },
+      { id: 'nezu', name: 'Nezu', nameJa: '根津', number: 'C 14', ward: 'Bunkyo', wardJa: '文京区', x: 1073, y: 461 },
+      { id: 'sendagi', name: 'Sendagi', nameJa: '千駄木', number: 'C 15', ward: 'Bunkyo', wardJa: '文京区', x: 1065, y: 430 },
+      { id: 'nishi-nippori', name: 'Nishi-nippori', nameJa: '西日暮里', number: 'C 16', ward: 'Arakawa', wardJa: '荒川区', x: 1075, y: 403 },
+      { id: 'machiya', name: 'Machiya', nameJa: '町屋', number: 'C 17', ward: 'Arakawa', wardJa: '荒川区', x: 1120, y: 360 },
+      { id: 'kita-senju', name: 'Kita-senju', nameJa: '北千住', number: 'C 18', ward: 'Adachi', wardJa: '足立区', x: 1199, y: 331 },
+      { id: 'ayase', name: 'Ayase', nameJa: '綾瀬', number: 'C 19', ward: 'Adachi', wardJa: '足立区', x: 1264, y: 281 },
+      { id: 'kita-ayase', name: 'Kita-ayase', nameJa: '北綾瀬', number: 'C 20', ward: 'Adachi', wardJa: '足立区', x: 1289, y: 224 },
+    ],
+  },
+
+
+  fukutoshin: {
+    id: 'fukutoshin',
+    name: 'Tokyo Metro Fukutoshin Line',
+    colour: '#9c5e31',
+
+    stations: [
+      { id: 'wakoshi', name: 'Wakoshi', nameJa: '和光市', number: 'F 01', ward: 'Wako', wardJa: '和光市', x: 573, y: 177 },
+      { id: 'chikatetsu-narimasu', name: 'Chikatetsu-narimasu', nameJa: '地下鉄成増', number: 'F 02', ward: 'Itabashi', wardJa: '板橋区', x: 634, y: 225 },
+      { id: 'chikatetsu-akatsuka', name: 'Chikatetsu-akatsuka', nameJa: '地下鉄赤塚', number: 'F 03', ward: 'Nerima', wardJa: '練馬区', x: 674, y: 250 },
+      { id: 'heiwadai', name: 'Heiwadai', nameJa: '平和台', number: 'F 04', ward: 'Nerima', wardJa: '練馬区', x: 707, y: 299 },
+      { id: 'hikawadai', name: 'Hikawadai', nameJa: '氷川台', number: 'F 05', ward: 'Nerima', wardJa: '練馬区', x: 744, y: 331 },
+      { id: 'kotake-mukaihara', name: 'Kotake-mukaihara', nameJa: '小竹向原', number: 'F 06', ward: 'Nerima', wardJa: '練馬区', x: 786, y: 356 },
+      { id: 'senkawa', name: 'Senkawa', nameJa: '千川', number: 'F 07', ward: 'Toshima', wardJa: '豊島区', x: 823, y: 378 },
+      { id: 'kanamecho', name: 'Kanamecho', nameJa: '要町', number: 'F 08', ward: 'Toshima', wardJa: '豊島区', x: 854, y: 399 },
+      { id: 'ikebukuro', name: 'Ikebukuro', nameJa: '池袋', number: 'F 09', ward: 'Toshima', wardJa: '豊島区', x: 894, y: 414 },
+      { id: 'zoshigaya', name: 'Zoshigaya', nameJa: '雑司が谷', number: 'F 10', ward: 'Toshima', wardJa: '豊島区', x: 905, y: 449 },
+      { id: 'nishi-waseda', name: 'Nishi-waseda', nameJa: '西早稲田', number: 'F 11', ward: 'Shinjuku', wardJa: '新宿区', x: 887, y: 500 },
+      { id: 'higashi-shinjuku', name: 'Higashi-shinjuku', nameJa: '東新宿', number: 'F 12', ward: 'Shinjuku', wardJa: '新宿区', x: 880, y: 538 },
+      { id: 'shinjuku-sanchome', name: 'Shinjuku-sanchome', nameJa: '新宿三丁目', number: 'F 13', ward: 'Shinjuku', wardJa: '新宿区', x: 877, y: 570 },
+      { id: 'kita-sando', name: 'Kita-sando', nameJa: '北参道', number: 'F 14', ward: 'Shibuya', wardJa: '渋谷区', x: 875, y: 616  },
+      { id: 'meiji-jingumae', name: 'Meiji-jingumae', nameJa: '明治神宮前', number: 'F 15', ward: 'Shibuya', wardJa: '渋谷区', x: 873, y: 658 },
+      { id: 'shibuya', name: 'Shibuya', nameJa: '渋谷', number: 'F 16', ward: 'Shibuya', wardJa: '渋谷区', x: 863, y: 698 },
     ],
   },
 
@@ -58,6 +114,30 @@ export const lines: Record<string, TrainLine> = {
       { id: 'inaricho', name: 'Inaricho', nameJa: '稲荷町', number: 'G 17', ward: 'Taito', wardJa: '台東区', x: 1127, y: 486 },
       { id: 'tawaramachi', name: 'Tawaramachi', nameJa: '田原町', number: 'G 18', ward: 'Taito', wardJa: '台東区', x: 1153, y: 492 },
       { id: 'asakusa', name: 'Asakusa', nameJa: '浅草', number: 'G 19', ward: 'Taito', wardJa: '台東区', x: 1173, y: 493 },
+    ],
+  },
+
+
+  hanzomon: {
+    id: 'hanzomon',
+    name: 'Tokyo Metro Hanzomon Line',
+    colour: '#8f76d6',
+
+    stations: [
+      { id: 'shibuya', name: 'Shibuya', nameJa: '渋谷', number: 'Z 01', ward: 'Shibuya', wardJa: '渋谷区', x: 863, y: 698 },
+      { id: 'omotesando', name: 'Omotesando', nameJa: '表参道', number: 'Z 02', ward: 'Minato', wardJa: '港区', x: 899, y: 671 },
+      { id: 'aoyama-itchome', name: 'Aoyama-itchome', nameJa: '青山一丁目', number: 'Z 03', ward: 'Minato', wardJa: '港区', x: 936, y: 641 },
+      { id: 'nagatacho', name: 'Nagatacho', nameJa: '永田町', number: 'Z 04', ward: 'Chiyoda', wardJa: '千代田区', x: 990, y: 620 },
+      { id: 'hanzomon', name: 'Hanzomon', nameJa: '半蔵門', number: 'Z 05', ward: 'Chiyoda', wardJa: '千代田区', x: 994, y: 589 },
+      { id: 'kudanshita', name: 'Kudanshita', nameJa: '九段下', number: 'Z 06', ward: 'Chiyoda', wardJa: '千代田区', x: 1026, y: 549 },
+      { id: 'jimbocho', name: 'Jimbocho', nameJa: '神保町', number: 'Z 07', ward: 'Chiyoda', wardJa: '千代田区', x: 1047, y: 548 },
+      { id: 'otemachi', name: 'Otemachi', nameJa: '大手町', number: 'Z 08', ward: 'Chiyoda', wardJa: '千代田区', x: 1073, y: 587 },
+      { id: 'mitsukoshimae', name: 'Mitsukoshimae', nameJa: '三越前', number: 'Z 09', ward: 'Chuo', wardJa: '中央区', x: 1097, y: 583 },
+      { id: 'suitengumae', name: 'Suitengumae', nameJa: '水天宮前', number: 'Z 10', ward: 'Chuo', wardJa: '中央区', x: 1138, y: 603 },
+      { id: 'kiyosumi-shirakawa', name: 'Kiyosumi-shirakawa', nameJa: '清澄白河', number: 'Z 11', ward: 'Koto', wardJa: '江東区', x: 1178, y: 602 },
+      { id: 'sumiyoshi', name: 'Sumiyoshi', nameJa: '住吉', number: 'Z 12', ward: 'Koto', wardJa: '江東区', x: 1235, y: 576 },
+      { id: 'kinshicho', name: 'Kinshicho', nameJa: '錦糸町', number: 'Z 13', ward: 'Sumida', wardJa: '墨田区', x: 1232, y: 545 },
+      { id: 'oshiage', name: 'Oshiage', nameJa: '押上', number: 'Z 14', ward: 'Sumida', wardJa: '墨田区', x: 1227, y: 488 },
     ],
   },
 
@@ -119,7 +199,7 @@ export const lines: Record<string, TrainLine> = {
       { id: 'tokyo', name: 'Tokyo', nameJa: '東京', number: 'M 17', ward: 'Chiyoda', wardJa: '千代田区', x: 1068, y: 605 },
       { id: 'otemachi', name: 'Otemachi', nameJa: '大手町', number: 'M 18', ward: 'Chiyoda', wardJa: '千代田区', x: 1073, y: 587 },
       { id: 'awajicho', name: 'Awajicho', nameJa: '淡路町', number: 'M 19', ward: 'Chiyoda', wardJa: '千代田区', x: 1078, y: 552 },
-      { id: 'ochanomizu', name: 'Ochanomizu', nameJa: '御茶ノ水', number: 'M 20', ward: 'Bunkyo', wardJa: '文京区', x: 1070, y: 530 },
+      { id: 'ochanomizu', name: 'Ochanomizu', nameJa: '御茶ノ水', number: 'M 20', ward: 'Chiyoda', wardJa: '文京区', x: 1070, y: 530 },
       { id: 'hongo-sanchome', name: 'Hongo-sanchome', nameJa: '本郷三丁目', number: 'M 21', ward: 'Bunkyo', wardJa: '文京区', x: 1052, y: 503 },
       { id: 'korakuen', name: 'Korakuen', nameJa: '後楽園', number: 'M 22', ward: 'Bunkyo', wardJa: '文京区', x: 1026, y: 502 },
       { id: 'myogadani', name: 'Myogadani', nameJa: '茗荷谷', number: 'M 23', ward: 'Bunkyo', wardJa: '文京区', x: 977, y: 462 },
@@ -140,6 +220,74 @@ export const lines: Record<string, TrainLine> = {
       { id: 'honancho', name: 'Honancho', nameJa: '方南町', number: 'Mb 03', ward: 'Suginami', wardJa: '杉並区', x: 719, y: 598 },
     ],
   },
+
+
+
+  mita: {
+    id: 'mita',
+    name: 'Toei Mita Line',
+    colour: '#0079c2',
+
+    stations: [
+      { id: 'meguro', name: 'Meguro', nameJa: '目黒', number: 'I 01', ward: 'Shinagawa', wardJa: '品川区', x: 909, y: 798 },
+      { id: 'shirokanedai', name: 'Shirokanedai', nameJa: '白金台', number: 'I 02', ward: 'Minato', wardJa: '港区', x: 943, y: 780 },
+      { id: 'shirokane-takanawa', name: 'Shirokane-takanawa', nameJa: '白金高輪', number: 'I 03', ward: 'Minato', wardJa: '港区', x: 970, y: 760 },
+      { id: 'mita', name: 'Mita', nameJa: '三田', number: 'I 04', ward: 'Minato', wardJa: '港区', x: 1014, y: 743 },
+      { id: 'shibakoen', name: 'Shibakoen', nameJa: '芝公園', number: 'I 05', ward: 'Minato', wardJa: '港区', x: 1021, y: 717 },
+      { id: 'onarimon', name: 'Onarimon', nameJa: '御成門', number: 'I 06', ward: 'Minato', wardJa: '港区', x: 1026, y: 686 },
+      { id: 'uchisaiwaicho', name: 'Uchisaiwaicho', nameJa: '内幸町', number: 'I 07', ward: 'Chiyoda', wardJa: '千代田区', x: 1040, y: 654 },
+      { id: 'hibiya', name: 'Hibiya', nameJa: '日比谷', number: 'I 08', ward: 'Chiyoda', wardJa: '千代田区', x: 1051, y: 635 },
+      { id: 'otemachi', name: 'Otemachi', nameJa: '大手町', number: 'I 09', ward: 'Chiyoda', wardJa: '千代田区', x: 1073, y: 587 },
+      { id: 'jimbocho', name: 'Jimbocho', nameJa: '神保町', number: 'I 10', ward: 'Chiyoda', wardJa: '千代田区', x: 1047, y: 548 },
+      { id: 'suidobashi', name: 'Suidobashi', nameJa: '水道橋', number: 'I 11', ward: 'Bunkyo', wardJa: '文京区', x: 1038, y: 522 },
+      { id: 'kasuga', name: 'Kasuga', nameJa: '春日', number: 'I 12', ward: 'Bunkyo', wardJa: '文京区', x: 1026, y: 497 },
+      { id: 'hakusan', name: 'Hakusan', nameJa: '白山', number: 'I 13', ward: 'Bunkyo', wardJa: '文京区', x: 1028, y: 448 },
+      { id: 'sengoku', name: 'Sengoku', nameJa: '千石', number: 'I 14', ward: 'Bunkyo', wardJa: '文京区', x: 1005, y: 419 },
+      { id: 'sugamo', name: 'Sugamo', nameJa: '巣鴨', number: 'I 15', ward: 'Toshima', wardJa: '豊島区', x: 981, y: 396 },
+      { id: 'nishi-sugamo', name: 'Nishi-sugamo', nameJa: '西巣鴨', number: 'I 16', ward: 'Toshima', wardJa: '豊島区', x: 952, y: 357 },
+      { id: 'shin-itabashi', name: 'Shin-itabashi', nameJa: '新板橋', number: 'I 17', ward: 'Itabashi', wardJa: '板橋区', x: 923, y: 336 },
+      { id: 'itabashi-kuyakushomae', name: 'Itabashi-kuyakushomae', nameJa: '板橋区役所前', number: 'I 18', ward: 'Itabashi', wardJa: '板橋区', x: 891, y: 325 },
+      { id: 'itabashi-honcho', name: 'Itabashi-honcho', nameJa: '板橋本町', number: 'I 19', ward: 'Itabashi', wardJa: '板橋区', x: 876, y: 287 },
+      { id: 'motohasunuma', name: 'Motohasunuma', nameJa: '本蓮沼', number: 'I 20', ward: 'Itabashi', wardJa: '板橋区', x: 865, y: 256 },
+      { id: 'shimura-sakaue', name: 'Shimura-sakaue', nameJa: '志村坂上', number: 'I 21', ward: 'Itabashi', wardJa: '板橋区', x: 843, y: 229 },
+      { id: 'shimura-sanchome', name: 'Shimura-sanchome', nameJa: '志村三丁目', number: 'I 22', ward: 'Itabashi', wardJa: '板橋区', x: 811, y: 221 },
+      { id: 'hasune', name: 'Hasune', nameJa: '蓮根', number: 'I 23', ward: 'Itabashi', wardJa: '板橋区', x: 789, y: 195 },
+      { id: 'nishidai', name: 'Nishidai', nameJa: '西台', number: 'I 24', ward: 'Itabashi', wardJa: '板橋区', x: 771, y: 183 },
+      { id: 'takashimadaira', name: 'Takashimadaira', nameJa: '高島平', number: 'I 25', ward: 'Itabashi', wardJa: '板橋区', x: 731, y: 176 },
+      { id: 'shin-takashimadaira', name: 'Shin-takashimadaira', nameJa: '新高島平', number: 'I 26', ward: 'Itabashi', wardJa: '板橋区', x: 708, y: 170 },
+      { id: 'nishi-takashimadaira', name: 'Nishi-takashimadaira', nameJa: '西高島平', number: 'I 27', ward: 'Itabashi', wardJa: '板橋区', x: 681, y: 164 },
+    ],
+  },
+
+
+  namboku: {
+    id: 'namboku',
+    name: 'Tokyo Metro Namboku Line',
+    colour: '#00ada9',
+
+    stations: [
+      { id: 'meguro', name: 'Meguro', nameJa: '目黒', number: 'N 01', ward: 'Shinagawa', wardJa: '品川区', x: 909, y: 798 },
+      { id: 'shirokanedai', name: 'Shirokanedai', nameJa: '白金台', number: 'N 02', ward: 'Minato', wardJa: '港区', x: 943, y: 780 },
+      { id: 'shirokane-takanawa', name: 'Shirokane-takanawa', nameJa: '白金高輪', number: 'N 03', ward: 'Minato', wardJa: '港区', x: 970, y: 760 },
+      { id: 'azabu-juban', name: 'Azabu-juban', nameJa: '麻布十番', number: 'N 04', ward: 'Minato', wardJa: '港区', x: 975, y: 705 },
+      { id: 'roppongi-itchome', name: 'Roppongi-itchome', nameJa: '六本木一丁目', number: 'N 05', ward: 'Minato', wardJa: '港区', x: 980, y: 711 },
+      { id: 'tameike-sanno', name: 'Tameike-sanno', nameJa: '溜池山王', number: 'N 06', ward: 'Chiyoda', wardJa: '千代田区', x: 995, y: 646 },
+      { id: 'nagatacho', name: 'Nagatacho', nameJa: '永田町', number: 'N 07', ward: 'Chiyoda', wardJa: '千代田区', x: 990, y: 620 },
+      { id: 'yotsuya', name: 'Yotsuya', nameJa: '四ツ谷', number: 'N 08', ward: 'Shinjuku', wardJa: '新宿区', x: 957, y: 596 },
+      { id: 'ichigaya', name: 'Ichigaya', nameJa: '市ケ谷', number: 'N 09', ward: 'Chiyoda', wardJa: '千代田区', x: 976, y: 564 },
+      { id: 'iidabashi', name: 'Iidabashi', nameJa: '飯田橋', number: 'N 10', ward: 'Chiyoda', wardJa: '千代田区', x: 1007, y: 524 },
+      { id: 'korakuen', name: 'Korakuen', nameJa: '後楽園', number: 'N 11', ward: 'Bunkyo', wardJa: '文京区', x: 1026, y: 502 },
+      { id: 'todaimae', name: 'Todaimae', nameJa: '東大前', number: 'N 12', ward: 'Bunkyo', wardJa: '文京区', x: 1047, y: 460 },
+      { id: 'hon-komagome', name: 'Hon-komagome', nameJa: '本駒込', number: 'N 13', ward: 'Bunkyo', wardJa: '文京区', x: 1035, y: 434 },
+      { id: 'komagome', name: 'Komagome', nameJa: '駒込', number: 'N 14', ward: 'Toshima', wardJa: '豊島区', x: 1009, y: 386 },
+      { id: 'nishigahara', name: 'Nishigahara', nameJa: '西ケ原', number: 'N 15', ward: 'Kita', wardJa: '北区', x: 996, y: 346 },
+      { id: 'oji', name: 'Oji', nameJa: '王子', number: 'N 16', ward: 'Kita', wardJa: '北区', x: 980, y: 316 },
+      { id: 'oji-kamiya', name: 'Oji-kamiya', nameJa: '王子神谷', number: 'N 17', ward: 'Kita', wardJa: '北区', x: 973, y: 271 },
+      { id: 'shimo', name: 'Shimo', nameJa: '志茂', number: 'N 18', ward: 'Kita', wardJa: '北区', x: 964, y: 220 },
+      { id: 'akabane-iwabuchi', name: 'Akabane-iwabuchi', nameJa: '赤羽岩淵', number: 'N 19', ward: 'Kita', wardJa: '北区', x: 930, y: 198 },
+    ],
+  },
+
 
 
   oedo: {
@@ -188,5 +336,208 @@ export const lines: Record<string, TrainLine> = {
       { id: 'hikarigaoka', name: 'Hikarigaoka', nameJa: '光が丘', number: 'E 38', ward: 'Nerima', wardJa: '練馬区', x: 626, y: 296 },
     ],
   },
+
+
+  rinkai: {
+    id: 'rinkai',
+    name: 'Rinkai Line',
+    colour: '#122a66',
+
+    stations: [
+      { id: 'shin-kiba', name: 'Shin-kiba', nameJa: '新木場', number: 'R 01', ward: 'Koto', wardJa: '江東区', x: 1271, y: 748 },
+      { id: 'shinonome', name: 'Shinonome', nameJa: '東雲', number: 'R 02', ward: 'Koto', wardJa: '江東区', x: 1189, y: 782 },
+      { id: 'kokusai-tenjijo', name: 'Kokusai-tenjijo', nameJa: '国際展示場', number: 'R 03', ward: 'Koto', wardJa: '江東区', x: 1158, y: 789 },
+      { id: 'tokyo-teleport', name: 'Tokyo-Teleport', nameJa: '東京テレポート', number: 'R 04', ward: 'Koto', wardJa: '江東区', x: 1107, y: 834 },
+      { id: 'tennozu-isle', name: 'Tennozu Isle', nameJa: '天王洲アイル', number: 'R 05', ward: 'Shinagawa', wardJa: '品川区', x: 1026, y: 845 },
+      { id: 'shinagawa-seaside', name: 'Shinagawa Seaside', nameJa: '品川シーサイド', number: 'R 06', ward: 'Shinagawa', wardJa: '品川区', x: 1021, y: 890 },
+      { id: 'oimachi', name: 'Oimachi', nameJa: '大井町', number: 'R 07', ward: 'Shinagawa', wardJa: '品川区', x: 990, y: 911 },
+      { id: 'osaki', name: 'Osaki', nameJa: '大崎', number: 'R 08', ward: 'Shinagawa', wardJa: '品川区', x: 946, y: 853 },
+    ],
+  },
+
+
+  setagaya: {
+    id: 'setagaya',
+    name: 'Tokyu Setagaya Line',
+    colour: '#fcc800',
+
+    stations: [
+      { id: 'sangen-jaya', name: 'Sangen-jaya', nameJa: '三軒茶屋', number: 'SG 01', ward: 'Setagaya', wardJa: '世田谷区', x: 791, y: 768 },
+      { id: 'nishi-taishido', name: 'Nishi-taishido', nameJa: '西太子堂', number: 'SG 02', ward: 'Setagaya', wardJa: '世田谷区', x: 780, y: 765 },
+      { id: 'wakabayashi', name: 'Wakabayashi', nameJa: '若林', number: 'SG 03', ward: 'Setagaya', wardJa: '世田谷区', x: 762, y: 762 },
+      { id: 'sho-in-jinja-mae', name: 'Shoin-jinja-mae', nameJa: '松陰神社前', number: 'SG 04', ward: 'Setagaya', wardJa: '世田谷区', x: 748, y: 769 },
+      { id: 'setagaya', name: 'Setagaya', nameJa: '世田谷', number: 'SG 05', ward: 'Setagaya', wardJa: '世田谷区', x: 735, y: 770 },
+      { id: 'kamimachi', name: 'Kamimachi', nameJa: '上町', number: 'SG 06', ward: 'Setagaya', wardJa: '世田谷区', x: 721, y: 771 },
+      { id: 'miyanosaka', name: 'Miyanosaka', nameJa: '宮の坂', number: 'SG 07', ward: 'Setagaya', wardJa: '世田谷区', x: 715, y: 755 },
+      { id: 'yamashita', name: 'Yamashita', nameJa: '山下', number: 'SG 08', ward: 'Setagaya', wardJa: '世田谷区', x: 720, y: 729 },
+      { id: 'matsubara', name: 'Matsubara', nameJa: '松原', number: 'SG 09', ward: 'Setagaya', wardJa: '世田谷区', x: 706, y: 707 },
+      { id: 'shimo-takaido', name: 'Shimo-takaido', nameJa: '下高井戸', number: 'SG 10', ward: 'Setagaya', wardJa: '世田谷区', x: 704, y: 683 },
+    ],
+  },
+
+
+shinjuku: {
+  id: 'shinjuku',
+  name: 'Toei Shinjuku Line',
+  colour: '#6cbb5a',
+
+  stations: [
+    { id: 'shinjuku', name: 'Shinjuku', nameJa: '新宿', number: 'S 01', ward: 'Shinjuku', wardJa: '新宿区', x: 853, y: 573 },
+    { id: 'shinjuku-sanchome', name: 'Shinjuku-sanchome', nameJa: '新宿三丁目', number: 'S 02', ward: 'Shinjuku', wardJa: '新宿区', x: 877, y: 570 },
+    { id: 'akebonobashi', name: 'Akebonobashi', nameJa: '曙橋', number: 'S 03', ward: 'Shinjuku', wardJa: '新宿区', x: 933, y: 563 },
+    { id: 'ichigaya', name: 'Ichigaya', nameJa: '市ケ谷', number: 'S 04', ward: 'Chiyoda', wardJa: '千代田区', x: 976, y: 564 },
+    { id: 'kudanshita', name: 'Kudanshita', nameJa: '九段下', number: 'S 05', ward: 'Chiyoda', wardJa: '千代田区', x: 1026, y: 549 },
+    { id: 'jimbocho', name: 'Jimbocho', nameJa: '神保町', number: 'S 06', ward: 'Chiyoda', wardJa: '千代田区', x: 1047, y: 548 },
+    { id: 'ogawamachi', name: 'Ogawamachi', nameJa: '小川町', number: 'S 07', ward: 'Chiyoda', wardJa: '千代田区', x: 1075, y: 552 },
+    { id: 'iwamotocho', name: 'Iwamotocho', nameJa: '岩本町', number: 'S 08', ward: 'Chiyoda', wardJa: '千代田区', x: 1104, y: 549 },
+    { id: 'bakuro-yokoyama', name: 'Bakuro-yokoyama', nameJa: '馬喰横山', number: 'S 09', ward: 'Chuo', wardJa: '中央区', x: 1128, y: 564 },
+    { id: 'hamacho', name: 'Hamacho', nameJa: '浜町', number: 'S 10', ward: 'Chuo', wardJa: '中央区', x: 1144, y: 578 },
+    { id: 'morishita', name: 'Morishita', nameJa: '森下', number: 'S 11', ward: 'Koto', wardJa: '江東区', x: 1177, y: 576 },
+    { id: 'kikukawa', name: 'Kikukawa', nameJa: '菊川', number: 'S 12', ward: 'Sumida', wardJa: '墨田区', x: 1205, y: 578 },
+    { id: 'sumiyoshi', name: 'Sumiyoshi', nameJa: '住吉', number: 'S 13', ward: 'Koto', wardJa: '江東区', x: 1235, y: 576 },
+    { id: 'nishi-ojima', name: 'Nishi-ojima', nameJa: '西大島', number: 'S 14', ward: 'Koto', wardJa: '江東区', x: 1270, y: 575 },
+    { id: 'ojima', name: 'Ojima', nameJa: '大島', number: 'S 15', ward: 'Koto', wardJa: '江東区', x: 1300, y: 572 },
+    { id: 'higashi-ojima', name: 'Higashi-ojima', nameJa: '東大島', number: 'S 16', ward: 'Koto', wardJa: '江東区', x: 1337, y: 572 },
+    { id: 'funabori', name: 'Funabori', nameJa: '船堀', number: 'S 17', ward: 'Edogawa', wardJa: '江戸川区', x: 1392, y: 596 },
+    { id: 'ichinoe', name: 'Ichinoe', nameJa: '一之江', number: 'S 18', ward: 'Edogawa', wardJa: '江戸川区', x: 1454, y: 588 },
+    { id: 'mizue', name: 'Mizue', nameJa: '瑞江', number: 'S 19', ward: 'Edogawa', wardJa: '江戸川区', x: 1503, y: 558 },
+    { id: 'shinozaki', name: 'Shinozaki', nameJa: '篠崎', number: 'S 20', ward: 'Edogawa', wardJa: '江戸川区', x: 1521, y: 507 },
+    { id: 'motoyawata', name: 'Motoyawata', nameJa: '本八幡', number: 'S 21', ward: 'Ichikawa', wardJa: '市川市', x: 1597, y: 438 },
+  ],
+},
+
+
+  tozai: {
+    id: 'tozai',
+    name: 'Tokyo Metro Tozai Line',
+    colour: '#11aaee',
+
+    stations: [
+      { id: 'nakano', name: 'Nakano', nameJa: '中野', number: 'T 01', ward: 'Nakano', wardJa: '中野区', x: 746, y: 508 },
+      { id: 'ochiai', name: 'Ochiai', nameJa: '落合', number: 'T 02', ward: 'Shinjuku', wardJa: '新宿区', x: 814, y: 489 },
+      { id: 'takadanobaba', name: 'Takadanobaba', nameJa: '高田馬場', number: 'T 03', ward: 'Shinjuku', wardJa: '新宿区', x: 880, y: 482 },
+      { id: 'waseda', name: 'Waseda', nameJa: '早稲田', number: 'T 04', ward: 'Shinjuku', wardJa: '新宿区', x: 928, y: 508 },
+      { id: 'kagurazaka', name: 'Kagurazaka', nameJa: '神楽坂', number: 'T 05', ward: 'Shinjuku', wardJa: '新宿区', x: 969, y: 516 },
+      { id: 'iidabashi', name: 'Iidabashi', nameJa: '飯田橋', number: 'T 06', ward: 'Chiyoda', wardJa: '千代田区', x: 1007, y: 524 },
+      { id: 'kudanshita', name: 'Kudanshita', nameJa: '九段下', number: 'T 07', ward: 'Chiyoda', wardJa: '千代田区', x: 1026, y: 549 },
+      { id: 'takebashi', name: 'Takebashi', nameJa: '竹橋', number: 'T 08', ward: 'Chiyoda', wardJa: '千代田区', x: 1045, y: 570 },
+      { id: 'otemachi', name: 'Otemachi', nameJa: '大手町', number: 'T 09', ward: 'Chiyoda', wardJa: '千代田区', x: 1073, y: 587 },
+      { id: 'nihombashi', name: 'Nihombashi', nameJa: '日本橋', number: 'T 10', ward: 'Chuo', wardJa: '中央区', x: 1099, y: 604 },
+      { id: 'kayabacho', name: 'Kayabacho', nameJa: '茅場町', number: 'T 11', ward: 'Chuo', wardJa: '中央区', x: 1118, y: 611 },
+      { id: 'monzen-nakacho', name: 'Monzen-nakacho', nameJa: '門前仲町', number: 'T 12', ward: 'Koto', wardJa: '江東区', x: 1165, y: 642 },
+      { id: 'kiba', name: 'Kiba', nameJa: '木場', number: 'T 13', ward: 'Koto', wardJa: '江東区', x: 1205, y: 654 },
+      { id: 'toyocho', name: 'Toyocho', nameJa: '東陽町', number: 'T 14', ward: 'Koto', wardJa: '江東区', x: 1241, y: 653 },
+      { id: 'minami-sunamachi', name: 'Minami-sunamachi', nameJa: '南砂町', number: 'T 15', ward: 'Koto', wardJa: '江東区', x: 1282, y: 657 },
+      { id: 'nishi-kasai', name: 'Nishi-kasai', nameJa: '西葛西', number: 'T 16', ward: 'Edogawa', wardJa: '江戸川区', x: 1378, y: 673 },
+      { id: 'kasai', name: 'Kasai', nameJa: '葛西', number: 'T 17', ward: 'Edogawa', wardJa: '江戸川区', x: 1421, y: 678 },
+      { id: 'urayasu', name: 'Urayasu', nameJa: '浦安', number: 'T 18', ward: 'Urayasu', wardJa: '浦安市', x: 1486, y: 669 },
+      { id: 'minami-gyotoku', name: 'Minami-gyotoku', nameJa: '南行徳', number: 'T 19', ward: 'Ichikawa', wardJa: '市川市', x: 1517, y: 641 },
+      { id: 'gyotoku', name: 'Gyotoku', nameJa: '行徳', number: 'T 20', ward: 'Ichikawa', wardJa: '市川市', x: 1558, y: 599 },
+      { id: 'myoden', name: 'Myoden', nameJa: '妙典', number: 'T 21', ward: 'Ichikawa', wardJa: '市川市', x: 1589, y: 567 },
+      { id: 'baraki-nakayama', name: 'Baraki-nakayama', nameJa: '原木中山', number: 'T 22', ward: 'Funabashi', wardJa: '船橋市', x: 1645, y: 518 },
+      { id: 'nishi-funabashi', name: 'Nishi-funabashi', nameJa: '西船橋', number: 'T 23', ward: 'Funabashi', wardJa: '船橋市', x: 1703, y: 503 },
+    ],
+  },
+
+
+  yamanote: {
+    id: 'yamanote',
+    name: 'JR Yamanote Line',
+    colour: '#9acd32',
+
+    stations: [
+      { id: 'tokyo', name: 'Tokyo', nameJa: '東京', number: 'JY 01', ward: 'Chiyoda', wardJa: '千代田区', x: 1068, y: 605 },
+      { id: 'yurakucho', name: 'Yurakucho', nameJa: '有楽町', number: 'JY 30', ward: 'Chiyoda', wardJa: '千代田区', x: 1061, y: 627 },
+      { id: 'shimbashi', name: 'Shimbashi', nameJa: '新橋', number: 'JY 29', ward: 'Minato', wardJa: '港区', x: 1051, y: 669 },
+      { id: 'hamamatsucho', name: 'Hamamatsucho', nameJa: '浜松町', number: 'JY 28', ward: 'Minato', wardJa: '港区', x: 1040, y: 706 },
+      { id: 'tamachi', name: 'Tamachi', nameJa: '田町', number: 'JY 27', ward: 'Minato', wardJa: '港区', x: 1010, y: 745 },
+      { id: 'takanawa-gateway', name: 'Takanawa Gateway', nameJa: '高輪ゲートウェイ', number: 'JY 26', ward: 'Minato', wardJa: '港区', x: 985, y: 778 },
+      { id: 'shinagawa', name: 'Shinagawa', nameJa: '品川', number: 'JY 25', ward: 'Minato', wardJa: '港区', x: 981, y: 816 },
+      { id: 'osaki', name: 'Osaki', nameJa: '大崎', number: 'JY 24', ward: 'Shinagawa', wardJa: '品川区', x: 946, y: 853 },
+      { id: 'gotanda', name: 'Gotanda', nameJa: '五反田', number: 'JY 23', ward: 'Shinagawa', wardJa: '品川区', x: 935, y: 824 },
+      { id: 'meguro', name: 'Meguro', nameJa: '目黒', number: 'JY 22', ward: 'Shinagawa', wardJa: '品川区', x: 909, y: 798 },
+      { id: 'ebisu', name: 'Ebisu', nameJa: '恵比寿', number: 'JY 21', ward: 'Shibuya', wardJa: '渋谷区', x: 887, y: 741 },
+      { id: 'shibuya', name: 'Shibuya', nameJa: '渋谷', number: 'JY 20', ward: 'Shibuya', wardJa: '渋谷区', x: 863, y: 698 },
+      { id: 'harajuku', name: 'Harajuku', nameJa: '原宿', number: 'JY 19', ward: 'Shibuya', wardJa: '渋谷区', x: 861, y: 644 },
+      { id: 'yoyogi', name: 'Yoyogi', nameJa: '代々木', number: 'JY 18', ward: 'Shibuya', wardJa: '渋谷区', x: 861, y: 595 },
+      { id: 'shinjuku', name: 'Shinjuku', nameJa: '新宿', number: 'JY 17', ward: 'Shinjuku', wardJa: '新宿区', x: 853, y: 573 },
+      { id: 'shin-okubo', name: 'Shin-okubo', nameJa: '新大久保', number: 'JY 16', ward: 'Shinjuku', wardJa: '新宿区', x: 851, y: 521 },
+      { id: 'takadanobaba', name: 'Takadanobaba', nameJa: '高田馬場', number: 'JY 15', ward: 'Shinjuku', wardJa: '新宿区', x: 880, y: 482 },
+      { id: 'mejiro', name: 'Mejiro', nameJa: '目白', number: 'JY 14', ward: 'Toshima', wardJa: '豊島区', x: 871, y: 441 },
+      { id: 'ikebukuro', name: 'Ikebukuro', nameJa: '池袋', number: 'JY 13', ward: 'Toshima', wardJa: '豊島区', x: 894, y: 414 },
+      { id: 'otsuka', name: 'Otsuka', nameJa: '大塚', number: 'JY 12', ward: 'Toshima', wardJa: '豊島区', x: 945, y: 397 },
+      { id: 'sugamo', name: 'Sugamo', nameJa: '巣鴨', number: 'JY 11', ward: 'Toshima', wardJa: '豊島区', x: 981, y: 396 },
+      { id: 'komagome', name: 'Komagome', nameJa: '駒込', number: 'JY 10', ward: 'Toshima', wardJa: '豊島区', x: 1009, y: 386 },
+      { id: 'tabata', name: 'Tabata', nameJa: '田端', number: 'JY 09', ward: 'Kita', wardJa: '北区', x: 1056, y: 373 },
+      { id: 'nishi-nippori', name: 'Nishi-nippori', nameJa: '西日暮里', number: 'JY 08', ward: 'Arakawa', wardJa: '荒川区', x: 1075, y: 403 },
+      { id: 'nippori', name: 'Nippori', nameJa: '日暮里', number: 'JY 07', ward: 'Arakawa', wardJa: '荒川区', x: 1088, y: 415 },
+      { id: 'uguisudani', name: 'Uguisudani', nameJa: '鶯谷', number: 'JY 06', ward: 'Taito', wardJa: '台東区', x: 1113, y: 439 },
+      { id: 'ueno', name: 'Ueno', nameJa: '上野', number: 'JY 05', ward: 'Taito', wardJa: '台東区', x: 1104, y: 483 },
+      { id: 'okachimachi', name: 'Okachimachi', nameJa: '御徒町', number: 'JY 04', ward: 'Taito', wardJa: '台東区', x: 1097, y: 497 },
+      { id: 'akihabara', name: 'Akihabara', nameJa: '秋葉原', number: 'JY 03', ward: 'Chiyoda', wardJa: '千代田区', x: 1104, y: 537 },
+      { id: 'kanda', name: 'Kanda', nameJa: '神田', number: 'JY 02', ward: 'Chiyoda', wardJa: '千代田区', x: 1089, y: 560 },
+    ],
+  },
+
+
+  yurakucho: {
+    id: 'yurakucho',
+    name: 'Tokyo Metro Yurakucho Line',
+    colour: '#c5a900',
+
+    stations: [
+      { id: 'wakoshi', name: 'Wakoshi', nameJa: '和光市', number: 'Y 01', ward: 'Wako', wardJa: '和光市', x: 573, y: 177 },
+      { id: 'chikatetsu-narimasu', name: 'Chikatetsu-narimasu', nameJa: '地下鉄成増', number: 'Y 02', ward: 'Itabashi', wardJa: '板橋区', x: 634, y: 225 },
+      { id: 'chikatetsu-akatsuka', name: 'Chikatetsu-akatsuka', nameJa: '地下鉄赤塚', number: 'Y 03', ward: 'Nerima', wardJa: '練馬区', x: 674, y: 250 },
+      { id: 'heiwadai', name: 'Heiwadai', nameJa: '平和台', number: 'Y 04', ward: 'Nerima', wardJa: '練馬区', x: 707, y: 299 },
+      { id: 'hikawadai', name: 'Hikawadai', nameJa: '氷川台', number: 'Y 05', ward: 'Nerima', wardJa: '練馬区', x: 744, y: 331 },
+      { id: 'kotake-mukaihara', name: 'Kotake-mukaihara', nameJa: '小竹向原', number: 'Y 06', ward: 'Nerima', wardJa: '練馬区', x: 786, y: 356 },
+      { id: 'senkawa', name: 'Senkawa', nameJa: '千川', number: 'Y 07', ward: 'Toshima', wardJa: '豊島区', x: 823, y: 378 },
+      { id: 'kanamecho', name: 'Kanamecho', nameJa: '要町', number: 'Y 08', ward: 'Toshima', wardJa: '豊島区', x: 854, y: 399 },
+      { id: 'ikebukuro', name: 'Ikebukuro', nameJa: '池袋', number: 'Y 09', ward: 'Toshima', wardJa: '豊島区', x: 894, y: 414 },
+      { id: 'higashi-ikebukuro', name: 'Higashi-ikebukuro', nameJa: '東池袋', number: 'Y 10', ward: 'Toshima', wardJa: '豊島区', x: 922, y: 428 },
+      { id: 'gokokuji', name: 'Gokokuji', nameJa: '護国寺', number: 'Y 11', ward: 'Bunkyo', wardJa: '文京区', x: 947, y: 456 },
+      { id: 'edogawabashi', name: 'Edogawabashi', nameJa: '江戸川橋', number: 'Y 12', ward: 'Bunkyo', wardJa: '文京区', x: 967, y: 494 },
+      { id: 'iidabashi', name: 'Iidabashi', nameJa: '飯田橋', number: 'Y 13', ward: 'Chiyoda', wardJa: '千代田区', x: 1007, y: 524 },
+      { id: 'ichigaya', name: 'Ichigaya', nameJa: '市ケ谷', number: 'Y 14', ward: 'Chiyoda', wardJa: '千代田区', x: 976, y: 564 },
+      { id: 'kojimachi', name: 'Kojimachi', nameJa: '麹町', number: 'Y 15', ward: 'Chiyoda', wardJa: '千代田区', x: 981, y: 595 },
+      { id: 'nagatacho', name: 'Nagatacho', nameJa: '永田町', number: 'Y 16', ward: 'Chiyoda', wardJa: '千代田区', x: 990, y: 620 },
+      { id: 'sakuradamon', name: 'Sakuradamon', nameJa: '桜田門', number: 'Y 17', ward: 'Chiyoda', wardJa: '千代田区', x: 1026, y: 623 },
+      { id: 'yurakucho', name: 'Yurakucho', nameJa: '有楽町', number: 'Y 18', ward: 'Chiyoda', wardJa: '千代田区', x: 1061, y: 627 },
+      { id: 'ginza-itchome', name: 'Ginza-itchome', nameJa: '銀座一丁目', number: 'Y 19', ward: 'Chuo', wardJa: '中央区', x: 1077, y: 635 },
+      { id: 'shintomicho', name: 'Shintomicho', nameJa: '新富町', number: 'Y 20', ward: 'Chuo', wardJa: '中央区', x: 1099, y: 650 },
+      { id: 'tsukishima', name: 'Tsukishima', nameJa: '月島', number: 'Y 21', ward: 'Chuo', wardJa: '中央区', x: 1132, y: 675 },
+      { id: 'toyosu', name: 'Toyosu', nameJa: '豊洲', number: 'Y 22', ward: 'Koto', wardJa: '江東区', x: 1172, y: 714 },
+      { id: 'tatsumi', name: 'Tatsumi', nameJa: '辰巳', number: 'Y 23', ward: 'Koto', wardJa: '江東区', x: 1218, y: 751 },
+      { id: 'shin-kiba', name: 'Shin-kiba', nameJa: '新木場', number: 'Y 24', ward: 'Koto', wardJa: '江東区', x: 1271, y: 748 },
+    ],
+  },
+
+
+  yurikamome: {
+    id: 'yurikamome',
+    name: 'Yurikamome Line',
+    colour: '#0565a3',
+
+    stations: [
+      { id: 'shimbashi', name: 'Shimbashi', nameJa: '新橋', number: 'U 01', ward: 'Minato', wardJa: '港区', x: 1051, y: 669 },
+      { id: 'shiodome', name: 'Shiodome', nameJa: '汐留', number: 'U 02', ward: 'Minato', wardJa: '港区', x: 1056, y: 672 },
+      { id: 'takeshiba', name: 'Takeshiba', nameJa: '竹芝', number: 'U 03', ward: 'Minato', wardJa: '港区', x: 1061, y: 717 },
+      { id: 'hinode', name: 'Hinode', nameJa: '日の出', number: 'U 04', ward: 'Minato', wardJa: '港区', x: 1052, y: 735 },
+      { id: 'shibaura-futo', name: 'Shibaura-futo', nameJa: '芝浦ふ頭', number: 'U 05', ward: 'Minato', wardJa: '港区', x: 1047, y: 765 },
+      { id: 'odaiba-kaihinkoen', name: 'Odaiba-kaihinkoen', nameJa: 'お台場海浜公園', number: 'U 06', ward: 'Minato', wardJa: '港区', x: 1115, y: 811 },
+      { id: 'daiba', name: 'Daiba', nameJa: '台場', number: 'U 07', ward: 'Minato', wardJa: '港区', x: 1091, y: 826 },
+      { id: 'tokyo-international-cruise-terminal', name: 'Tokyo International Cruise Terminal', nameJa: '東京国際クルーズターミナル', number: 'U 08', ward: 'Koto', wardJa: '江東区', x: 1097, y: 844 },
+      { id: 'telecom-center', name: 'Telecom Center', nameJa: 'テレコムセンター', number: 'U 09', ward: 'Koto', wardJa: '江東区', x: 1117, y: 859 },
+      { id: 'aomi', name: 'Aomi', nameJa: '青海', number: 'U 10', ward: 'Koto', wardJa: '江東区', x: 1123, y: 832 },
+      { id: 'tokyo-big-sight', name: 'Tokyo Big Sight', nameJa: '東京ビッグサイト', number: 'U 11', ward: 'Koto', wardJa: '江東区', x: 1156, y: 810 },
+      { id: 'ariake', name: 'Ariake', nameJa: '有明', number: 'U 12', ward: 'Koto', wardJa: '江東区', x: 1162, y: 792 },
+      { id: 'ariake-tennis-no-mori', name: 'Ariake-tennis-no-mori', nameJa: '有明テニスの森', number: 'U 13', ward: 'Koto', wardJa: '江東区', x: 1148, y: 771 },
+      { id: 'shijo-mae', name: 'Shijo-mae', nameJa: '市場前', number: 'U 14', ward: 'Koto', wardJa: '江東区', x: 1137, y: 750 },
+      { id: 'shin-toyosu', name: 'Shin-toyosu', nameJa: '新豊洲', number: 'U 15', ward: 'Koto', wardJa: '江東区', x: 1152, y: 737 },
+      { id: 'toyosu', name: 'Toyosu', nameJa: '豊洲', number: 'U 16', ward: 'Koto', wardJa: '江東区', x: 1172, y: 714 },
+    ],
+  },
+
 
 };

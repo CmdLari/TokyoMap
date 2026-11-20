@@ -18,8 +18,6 @@ function App() {
   const ambienceAudioRef = useRef<HTMLAudioElement | null>(null);
   const ambienceTimerRef = useRef<ReturnType<typeof setTimeout> | null>(null);
 
-
-
   // Find the railway line containing the selected station
   const currentLine = selectedStation
     ? Object.values(lines).find(line =>
@@ -30,6 +28,18 @@ function App() {
         )
       )
     : null;
+
+  const transferLines = selectedStation
+    ? Object.values(lines).filter(line =>
+        line.id !== currentLine?.id &&
+        line.stations.some(
+          station => station.id === selectedStation.id
+        ) &&
+        line.stations.some(
+          station => getStationPhotos(station).length > 0
+        )
+      )
+    : [];
 
   const activeStations = currentLine
     ? currentLine.stations.filter(
@@ -215,9 +225,49 @@ useEffect(() => {
               <div className="station-nav-current">
                 <span>{selectedStation.name}</span>
                 <small>{selectedStation.nameJa}</small>
-                <span className="station-nav-number">
+
+                <span
+                  className="station-nav-number"
+                  style={{
+                    backgroundColor: currentLine?.colour ?? '#ffffff',
+                  }}
+                >
                   {selectedStation.number.replaceAll(' ', '')}
                 </span>
+
+                {transferLines.length > 0 && (
+                  <div className="station-transfers">
+                    <span className="station-transfers-label">
+                      switch here for
+                    </span>
+
+                    <div className="station-transfers-list">
+                      {transferLines.map(line => {
+                        const transferStation = line.stations.find(
+                          station => station.id === selectedStation.id
+                        );
+
+                        if (!transferStation) return null;
+
+                        return (
+                          <button
+                            key={line.id}
+                            className="station-transfer-button"
+                            style={{ borderColor: line.colour }}
+                            onClick={() => setSelectedStation(transferStation)}
+                          >
+                            <span
+                              className="station-transfer-dot"
+                              style={{ backgroundColor: line.colour }}
+                            />
+
+                            {line.name}
+                          </button>
+                        );
+                      })}
+                    </div>
+                  </div>
+                )}
               </div>
 
               <button
