@@ -24,19 +24,19 @@
 }
 
 .photo-lightbox-info {
-  width: 20%;
+  /* width: 20%; */
   margin-top: 10%;
   margin-left: 0%;
-  justify-content: flex-end;
+  justify-content: left;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   gap: 12px;
-  font-size: 50px;
+  font-size: 30px;
   font-weight: 300;
   letter-spacing: 1px;
   line-height: 1.0;
-  text-shadow: 0 2px 6px rgba(0, 0, 0, 0.5);
+  text-shadow: 0 2px 6px rgba(0, 0, 0, 0.7);
 }
 
 .photo-lightbox-break {

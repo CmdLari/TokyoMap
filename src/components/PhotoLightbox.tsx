@@ -59,17 +59,17 @@ export default function PhotoLightbox({
     >
       <div className="photo-lightbox-header">
         <div className="photo-lightbox-info">
-          <span className="photo-lightbox-divider">+</span>
+          {/* <span className="photo-lightbox-divider">+</span> */}
           <span>{photo.year}</span>
 
-          <span className="photo-lightbox-break" />
+          {/* <span className="photo-lightbox-break" /> */}
 
-          <span className="photo-lightbox-divider">+</span>
+          <span className="photo-lightbox-divider">||</span>
           <span>{station.ward} | {station.wardJa}</span>
 
           <span className="photo-lightbox-break" />
 
-          <span className="photo-lightbox-divider">+</span>
+          {/* <span className="photo-lightbox-divider">+</span> */}
           <span>{station.name} | {station.nameJa}</span>
         </div>
 
